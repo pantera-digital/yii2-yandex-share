@@ -1,21 +1,15 @@
 {
-    "name": "elgorm/yii2-yandex-sharebuttons",
-    "description":"Yandex share buttons for Yii2",
+    "name": "pantera-digital/yii2-yandex-share",
+    "description": "Yandex share buttons for Yii2",
     "type": "yii2-extension",
     "license": "Apache-2.0",
-    "authors": [
-        {
-            "name": "elgorm",
-            "email": "yii2widget@4ml.su"
-        }
-    ],    
     "minimum-stability": "dev",
     "require": {
         "yiisoft/yii2": ">=2.0.7"
     },
     "autoload": {
         "psr-4": {
-            "elgorm\\sharebuttons\\": "src/"
+            "pantera\\yandexShare\\": "src/"
         }
     }
 }
