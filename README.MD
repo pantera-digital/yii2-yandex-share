@@ -44,16 +44,16 @@ This widget added from your site share buttons from Yandex
 
 # Installation
 
-This library can be found on [Packagist](https://packagist.org/packages/elgorm/yii2-yandex-sharebuttons).
+This library can be found on [Packagist](https://packagist.org/packages/pantera-digital/yii2-yandex-share).
 The recommended way to install this is through [composer](http://getcomposer.org).
 
 Edit your `composer.json` and add:
 
 ```json
 {
-		"require": {
-				"composer require elgorm/yii2-yandex-sharebuttons": "^1.0@stable"
-		}
+    "require": {
+        "composer require pantera-digital/yii2-yandex-share": "^1.0@stable"
+    }
 }
 ```
 
@@ -62,7 +62,7 @@ Edit your `composer.json` and add:
 Add this code in page for share:
 
 ```php
-use elgorm\sharebuttons\ShareButtons;
+use pantera\yandexShare\ShareButtons;
 
 ...
 <?= ShareButtons::widget(
@@ -78,7 +78,7 @@ use elgorm\sharebuttons\ShareButtons;
             'tag'=>'span', //default "div" 
         ]
     ]
-);?>
+); ?>
 ...
 ```
 
@@ -110,4 +110,4 @@ Available services:
 
 # License
 
-The extension was released under the [Apache-2.0](https://opensource.org/licenses/Apache-2.0), so you'll find the latest version on [GitHub](https://github.com/Elgorm/yii2-yandex-sharebuttons).
+The extension was released under the [Apache-2.0](https://opensource.org/licenses/Apache-2.0), so you'll find the latest version on [GitHub](https://github.com/pantera-digital/yii2-yandex-share).
