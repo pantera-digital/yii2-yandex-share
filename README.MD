@@ -49,12 +49,8 @@ The recommended way to install this is through [composer](http://getcomposer.org
 
 Edit your `composer.json` and add:
 
-```json
-{
-    "require": {
-        "composer require pantera-digital/yii2-yandex-share": "^1.0@stable"
-    }
-}
+```
+composer require pantera-digital/yii2-yandex-share "@dev"
 ```
 
 # Usage

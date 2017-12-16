@@ -1,13 +1,17 @@
 <?php
-namespace elgorm\sharebuttons;
+
+namespace pantera\yandexShare;
+
 use yii\base\Widget;
 
-class ShareButtons extends Widget{
+class ShareButtons extends Widget
+{
 
-    public $clientOptions=[];
-    private $options="";
+    public $clientOptions = [];
+    private $options = [];
 
-    public function init(){
+    public function init()
+    {
         parent::init();
         if (!isset($this->clientOptions['id'])) {
             $this->clientOptions['id'] = $this->getId();
@@ -17,25 +21,24 @@ class ShareButtons extends Widget{
             $this->clientOptions['tag'] = 'div';
         }
 
-        foreach ($this->clientOptions as $key=>$option){
-            if (mb_strtolower($key)!='id' && mb_strtolower($key)!='class' && mb_strtolower($key)!='tag'){
-                if (is_bool($option)){
-                    $this->options["data-".$key]="";
+        foreach ($this->clientOptions as $key => $option) {
+            if (mb_strtolower($key) != 'id' && mb_strtolower($key) != 'class' && mb_strtolower($key) != 'tag') {
+                if (is_bool($option)) {
+                    $this->options["data-" . $key] = "";
+                } else {
+                    $this->options["data-" . $key] = $option;
                 }
-                else {
-                    $this->options["data-".$key]=$option;
-                }
-            }
-            else {
-                if (mb_strtolower($key)!='tag'){
-                    $this->options[$key]=$option;
+            } else {
+                if (mb_strtolower($key) != 'tag') {
+                    $this->options[$key] = $option;
                 }
             }
         }
     }
 
-    public function run(){
-        return $this->render('widget',['options'=>$this->options,'tag'=>$this->clientOptions['tag']]);
+    public function run()
+    {
+        return $this->render('widget', ['options' => $this->options, 'tag' => $this->clientOptions['tag']]);
     }
 
 }
