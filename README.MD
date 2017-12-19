@@ -50,7 +50,7 @@ The recommended way to install this is through [composer](http://getcomposer.org
 Edit your `composer.json` and add:
 
 ```
-composer require pantera-digital/yii2-yandex-share "@dev"
+composer require pantera-digital/yii2-yandex-share "dev-kid"
 ```
 
 # Usage
